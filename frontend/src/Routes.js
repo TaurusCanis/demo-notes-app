@@ -28,6 +28,9 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/notes/:id">
         <Notes />
       </AuthenticatedRoute>
+      <UnauthenticatedRoute exact path="/">
+        <Home />
+      </UnauthenticatedRoute>
     </Switch>
   );
 }
