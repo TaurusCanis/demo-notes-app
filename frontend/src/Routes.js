@@ -31,6 +31,9 @@ export default function Routes() {
       <UnauthenticatedRoute exact path="/">
         <Home />
       </UnauthenticatedRoute>
+      <Route>
+        <NotFound />
+      </Route>
     </Switch>
   );
 }
